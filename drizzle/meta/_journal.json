@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1718701853890,
+      "tag": "0000_calm_ultragirl",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1718702549346,
+      "tag": "0001_lucky_bruce_banner",
+      "breakpoints": true
+    }
+  ]
+}
