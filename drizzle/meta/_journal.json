@@ -15,6 +15,20 @@
       "when": 1718702549346,
       "tag": "0001_lucky_bruce_banner",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1718789608208,
+      "tag": "0002_true_prodigy",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1718801664500,
+      "tag": "0003_next_piledriver",
+      "breakpoints": true
     }
   ]
 }
