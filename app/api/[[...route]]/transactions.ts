@@ -228,7 +228,10 @@ const app = new Hono()
         .update(transactions)
         .set(values)
         .where(
-          inArray(transactions.id, sql`select id from ${transactionsToUpdate}`)
+          inArray(
+            transactions.id,
+            sql`(select id from ${transactionsToUpdate})`
+          )
         )
         .returning();
 
@@ -272,7 +275,10 @@ const app = new Hono()
         .with(transactionsToDelete)
         .delete(transactions)
         .where(
-          inArray(transactions.id, sql`select id from ${transactionsToDelete}`)
+          inArray(
+            transactions.id,
+            sql`(select id from ${transactionsToDelete})`
+          )
         )
         .returning({
           id: transactions.id,

@@ -38,7 +38,7 @@ export const NewCategorySheet = () => {
         <SheetHeader>
           <SheetTitle>New Category</SheetTitle>
           <SheetDescription>
-            Create a new category to organise your transactions.
+            Create a new category to organise your transactions
           </SheetDescription>
         </SheetHeader>
         <CategoryForm
