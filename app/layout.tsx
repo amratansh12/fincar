@@ -10,7 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Fincar",
-  description: "One stop solution to manage your financial data.",
+  description:
+    "One stop solution to manage your financial data and transactions. Get the detailed summary of all your past transactions.",
 };
 
 export default function RootLayout({
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
+        <link rel="icon" href="/logo.svg" />
         <body className={inter.className}>
           <QueryProvider>
             <SheetProvider />
