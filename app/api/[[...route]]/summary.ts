@@ -6,7 +6,11 @@ import { clerkMiddleware, getAuth } from "@hono/clerk-auth";
 import { zValidator } from "@hono/zod-validator";
 import { subDays, parse, differenceInDays } from "date-fns";
 import { accounts, categories, transactions } from "@/db/schema";
-import { calculatePercentageChange, fillMissingDays } from "@/lib/utils";
+import {
+  calculatePercentageChange,
+  convertAmountFromMilliunits,
+  fillMissingDays,
+} from "@/lib/utils";
 
 const app = new Hono().get(
   "/",

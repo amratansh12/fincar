@@ -27,6 +27,8 @@ export const useGetSummary = () => {
 
       const { data } = await response.json();
 
+      console.log("SUMMARY DAYS- ", data.days);
+
       return {
         ...data,
         incomeAmout: convertAmountFromMilliunits(data.incomeAmount),
@@ -38,8 +40,8 @@ export const useGetSummary = () => {
         })),
         days: data.days.map((day) => ({
           ...day,
-          income: convertAmountFromMilliunits(day.income),
-          expenses: convertAmountFromMilliunits(day.expenses),
+          income: convertAmountFromMilliunits(Number(day.income)),
+          expenses: convertAmountFromMilliunits(Number(day.expenses)),
         })),
       };
     },
