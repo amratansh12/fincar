@@ -156,7 +156,7 @@ const app = new Hono().get(
       data: {
         remainingAmount: currentPeriod.remaining,
         remainingChange,
-        incomeAmount: currentPeriod.income,
+        incomeAmount: convertAmountFromMilliunits(currentPeriod.income),
         incomeChange,
         expensesAmount: currentPeriod.expenses,
         expensesChange,
